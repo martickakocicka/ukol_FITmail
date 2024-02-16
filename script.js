@@ -24,7 +24,7 @@ console.log (jmenoPrijmeni)
 
 
 const zacatek = (jmenoPrijmeni.replace("á", "a").replace("č", "c").replace("ď", "d").replace("é", "e")
-.replace("ě", "e").replace("ň", "n").replace("ř", "r").replace("š", "s").replace("ť", "t").replace("ú", "u")
+.replace("ě", "e").replace("í", "i").replace("ň", "n").replace("ř", "r").replace("š", "s").replace("ť", "t").replace("ú", "u")
 .replace("ů", "u").replace("ý", "y").replace("ž", "z"))
 
 console.log (zacatek)
@@ -36,4 +36,5 @@ document.body.innerHTML = `Vaše e-mailová adresa je: <b>${zacatek}@fit.cvut.cz
 
 //jak vyresit opakovani znaku s diakritikou:
 
+//const znak = (zacatek.indexOf())
 
