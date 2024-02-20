@@ -22,7 +22,7 @@ console.log (prijmeniOrez)
 const jmenoPrijmeni = String((jmenoOrez+prijmeniOrez).toLowerCase())
 console.log (jmenoPrijmeni)
 
-
+//normalize rozloží znak na normální + diaktriku (eˇ+ˇ); replace vzal divnoznak a nahradil ho ničím
 let zacatek = jmenoPrijmeni.normalize('NFKD').replace(/[^\w]/g, '');
 console.log (zacatek)
 
