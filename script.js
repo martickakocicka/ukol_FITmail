@@ -23,10 +23,7 @@ const jmenoPrijmeni = String((jmenoOrez+prijmeniOrez).toLowerCase())
 console.log (jmenoPrijmeni)
 
 
-const zacatek = (jmenoPrijmeni.replace("á", "a").replace("č", "c").replace("ď", "d").replace("é", "e")
-.replace("ě", "e").replace("í", "i").replace("ň", "n").replace("ř", "r").replace("š", "s").replace("ť", "t").replace("ú", "u")
-.replace("ů", "u").replace("ý", "y").replace("ž", "z"))
-
+let zacatek = jmenoPrijmeni.normalize('NFKD').replace(/[^\w]/g, '');
 console.log (zacatek)
 
 //připojí se k doméně fit.cvut.cz - Pomocí interpolace řetězců sestavte výslednou adresu a 
@@ -34,7 +31,5 @@ console.log (zacatek)
 
 document.body.innerHTML = `Vaše e-mailová adresa je: <b>${zacatek}@fit.cvut.cz</b>`
 
-//jak vyresit opakovani znaku s diakritikou:
 
-//const znak = (zacatek.indexOf())
 
